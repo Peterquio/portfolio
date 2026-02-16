@@ -1,0 +1,233 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Corpo da página */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Cabeçalho */
+header {
+  background: #222;
+  color: #fff;
+  padding: 20px;
+}
+
+/* Menu */
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+}
+
+/* Seções */
+section {
+  padding: 40px 20px;
+}
+
+/* ===================== */
+/* PROJETOS */
+/* ===================== */
+
+#lista-projetos {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.projeto {
+  background: white;
+  padding: 15px;
+  margin-bottom: 12px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: box-shadow 0.3s;
+}
+
+.projeto:hover {
+  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+}
+
+.projeto h3 {
+  margin-bottom: 5px;
+}
+
+/* Detalhes (expandir/retrair) */
+.projeto-detalhes {
+  display: none;
+  margin-top: 15px;
+}
+
+.projeto.aberto .projeto-detalhes {
+  display: block;
+}
+
+/* ===================== */
+/* CARROSSEL */
+/* ===================== */
+
+.carrossel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  margin-top: 15px;
+}
+
+.galeria {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  width: 420px;
+}
+
+.galeria img {
+  width: 120px;
+  border-radius: 6px;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.galeria img.ativa {
+  opacity: 1;
+  transform: scale(1.25);
+}
+
+.preview {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 15px;
+}
+
+.preview img {
+  width: 500px;
+  max-width: 100%;
+  border-radius: 10px;
+  transition: transform 0.3s;
+}
+
+.preview img:hover {
+  transform: scale(1.02);
+}
+
+/* Setas */
+.seta {
+  background: none;
+  border: none;
+  font-size: 22px;
+  cursor: pointer;
+  user-select: none;
+}
+
+.seta:hover {
+  transform: scale(1.2);
+}
+
+/* ===================== */
+/* MODAL */
+/* ===================== */
+
+.modal {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.85);
+  display: none;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+}
+
+.modal-img {
+  max-width: 90%;
+  max-height: 90%;
+  border-radius: 8px;
+}
+
+/* ===================== */
+/* CONTAINERS GERAIS */
+/* ===================== */
+
+.h-container,
+.h-nr-container {
+  display: flex;
+  gap: 3%;
+  align-items: center;
+}
+
+.small-container {
+  width: clamp(160px, 12%, 360px);
+}
+
+.small-container img {
+  width: 100%;
+}
+
+.big-container {
+  width: 88%;
+  text-align: justify;
+}
+
+.logo-container {
+  width: 80px;
+  flex-shrink: 0;
+}
+
+.logo-container img {
+  width: 100%;
+  display: block;
+}
+
+.large-container {
+  width: 80%;
+}
+
+.large-container h1 {
+  font-size: clamp(1.4rem, 4vw, 2.5rem);
+  white-space: nowrap;
+}
+
+/* ===================== */
+/* RESPONSIVIDADE */
+/* ===================== */
+
+@media (max-width: 768px) {
+
+  .h-container {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .small-container {
+    width: clamp(80px, 90%, 360px);
+  }
+
+  .big-container {
+    width: 90%;
+  }
+
+  .small-container img {
+    width: 65%;
+    display: block;
+    margin: 0 auto;
+  }
+
+  /* Carrossel mobile */
+  .galeria {
+    width: 260px;
+  }
+
+  .galeria img {
+    width: 90px;
+  }
+}
