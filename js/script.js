@@ -1,7 +1,7 @@
 const projetos = [
   {
-    nome: "Sistema com ESP32-CAM",
-    descricao: "Detecção de objetos com IA e comunicação com Arduino",
+    nome: "AI Pet - Inteligência Artificial para Pets",
+    descricao: "Detecção de pessoas e animais com IA e comunicação com Arduino e Raspberry PI",
     detalhes: "Sistema embarcado com visão computacional.",
     imagens: [
       "img/esp32_1.png",
@@ -13,6 +13,7 @@ const projetos = [
     nome: "Pokedex 2.0",
     descricao: "Aplicação em Python com SQLite e interface gráfica",
     detalhes: "Sistema desktop com banco de dados.",
+    link: "https://github.com/Peterquio/pokedex_2.0",
     imagens: [
       "img/pokedex_1.png",
       "img/pokedex_2.png",
@@ -35,6 +36,14 @@ projetos.forEach(projeto => {
 
     <div class="projeto-detalhes">
       <p>${projeto.detalhes}</p>
+
+    ${projeto.link ? `
+    <p>
+      🔗 <a href="${projeto.link}" target="_blank">
+       Ver no GitHub
+      </a>
+    </p>
+    ` : ""}
 
       <div class="modal">
         <img class="modal-img">
@@ -102,8 +111,7 @@ const atualizar = () => {
     imagens[1].style.order = 2;
     imagens[2].style.order = 3;
 
-    previewImg.src = imagens[0].src; // 🔥 importante
-
+    previewImg.src = imagens[0].src; 
     return;
   }
 
@@ -122,7 +130,7 @@ const atualizar = () => {
 
   imagens[indexAtual].classList.add("ativa");
 
-  previewImg.src = imagens[indexAtual].src; // 🔥 atualiza sempre
+  previewImg.src = imagens[indexAtual].src;
 };
  
  setaDireita.addEventListener("click", e => {
