@@ -16,7 +16,7 @@ const projetos = [
             { tipo: "imagem", src: "img/my_notebook_3.png" },
             {
                 tipo: "video",
-                src: "https://youtube-nocookie.com/embed/oqB45QmgYLM"
+                src: "https://youtube.com/embed/oqB45QmgYLM"
             }
         ]
     },
@@ -33,7 +33,7 @@ const projetos = [
         midias: [
             {
                 tipo: "video",
-                src: "https://www.youtube-nocookie.com/embed/ojbSPCltV9U"
+                src: "https://www.youtube.com/embed/ojbSPCltV9U"
             },
             { tipo: "imagem", src: "img/aipet_1.png" },
             { tipo: "imagem", src: "img/aipet_2.png" },
