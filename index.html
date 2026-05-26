@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfólio de Diego</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 </head>
 <body>
 
@@ -15,14 +17,14 @@
             </div>
 
             <div class="large-container">
-                <h1>Diego Morgado</h1>
+                <h1 class="main-title">Diego Morgado</h1>
 
                 <nav>
                     <ul>
-                        <li><a href="#sobre">Sobre</a></li>
-                        <li><a href="#projetos">Projetos</a></li>
+                        <li><a href="#sobre">Sobre mim</a></li>
                         <li><a href="#habilidades">Habilidades</a></li>
-                        <li><a href="#contato">Contato</a></li>
+                        <li><a href="#projetos">Projetos</a></li>
+                        <li><a href="#curriculo">Meu Currículo</a></li>
                     </ul>
                 </nav>
             </div>
@@ -31,39 +33,124 @@
 
     <main>
         <section id="sobre">
-            <h2>Quem sou eu?</h2>
-
-            <div class="h-container">
+            <div class="profile-container">
                 <div class="small-container">
                     <img src="img/profile.png" alt="Foto de Diego">
-                </div>
 
-                <div class="big-container">
-                    <p>
-                        Me chamo Diego, tenho 30 e poucos anos e sou formado em Engenharia de Automação e Controle (Mecatrônica).
-                        Trabalho como professor há mais de 10 anos e, nessa jornada, fiz trabalhos incríveis orientando meus alunos:
-                        desde aplicações de Sistemas Embarcados para Automação Residencial até a criação de protótipos
-                        de automação baseados em reconhecimento facial de pessoas e animais.
-                    </p>
-
-                    <p>
-                        Nesse tempo, comecei a me dedicar ao Desenvolvimento de Software.
-                        Iniciei meus estudos em linguagens de programação com C++ e Python, e fui me interessando em me tornar
-                        um desenvolvedor Full Stack, aprendendo também JS, HTML e CSS.
-                    </p>
-
-                    <p>
-                        Meu portfólio ainda está em desenvolvimento e aqui colocarei meus projetos mais relevantes.
-                    </p>
-
-                    <p>
-                        No mais, você pode ver o que ando aprontando em:
-                        <a href="https://github.com/Peterquio" target="_blank" rel="noopener noreferrer">
-                            GitHub de Diego
+                    <div class="social-links">
+                        <a href="SEU_LINK_DO_LINKEDIN_AQUI" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                            <i class="fab fa-linkedin-in"></i>
                         </a>
+
+                        <a href="https://github.com/Peterquio" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
+
+                        <a href="mailto:dimorgs@gmail.com" aria-label="E-mail">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bio-wrapper">
+                <div class="bio-card">
+                    <p>
+                        Sou desenvolvedor Python com foco em automação, inteligência artificial,
+                        aplicações desktop e arquitetura de software. Tenho experiência na criação
+                        de sistemas voltados para organização de processos, análise de dados,
+                        visão computacional e integração entre software e hardware.
+                    </p>
+
+                    <p>
+                        Meus projetos unem engenharia, design de software e IA para resolver
+                        problemas reais de forma prática e escalável. Trabalho principalmente
+                        com Python, PySide6, SQLite, APIs, automações industriais e modelos
+                        de inteligência artificial aplicados a visão computacional e produtividade.
+                    </p>
+
+                    <p>
+                        Atualmente desenvolvo soluções próprias como sistemas modulares desktop,
+                        ferramentas de automação de fluxo produtivo e projetos envolvendo IA,
+                        ESP32-CAM e análise inteligente de dados. Tenho grande interesse em
+                        arquitetura limpa, experiência do usuário e construção de produtos
+                        tecnológicos modernos.
                     </p>
                 </div>
             </div>
+        </section>
+
+        <section id="habilidades">
+            <section id="habilidades">
+                <h2>Habilidades por Afinidade</h2>
+
+                <div class="skills-list">
+
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <i class="fab fa-python"></i>
+                            <span>Python</span>
+                        </div>
+
+                        <div class="skill-stars" data-rating="5"></div>
+                    </div>
+
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <i class="fas fa-brain"></i>
+                            <span>Inteligência Artificial</span>
+                        </div>
+
+                        <div class="skill-stars" data-rating="4.5"></div>
+                    </div>
+
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <i class="fas fa-desktop"></i>
+                            <span>PySide6 / Desktop Apps</span>
+                        </div>
+
+                        <div class="skill-stars" data-rating="5"></div>
+                    </div>
+
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <i class="fas fa-database"></i>
+                            <span>SQLite / Banco de Dados</span>
+                        </div>
+
+                        <div class="skill-stars" data-rating="4.5"></div>
+                    </div>
+
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <i class="fas fa-microchip"></i>
+                            <span>Sistemas Embarcados</span>
+                        </div>
+
+                        <div class="skill-stars" data-rating="4"></div>
+                    </div>
+
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <i class="fas fa-gears"></i>
+                            <span>Automação Industrial</span>
+                        </div>
+
+                        <div class="skill-stars" data-rating="5"></div>
+                    </div>
+
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <i class="fab fa-react"></i>
+                            <span>React / Front-End</span>
+                        </div>
+
+                        <div class="skill-stars" data-rating="3.5"></div>
+                    </div>
+
+                </div>
+            </section>
         </section>
 
         <section id="projetos">
@@ -71,33 +158,105 @@
             <div id="lista-projetos"></div>
         </section>
 
-        <section id="habilidades">
-            <h2>Habilidades</h2>
-            <ul>
-                <li>Python</li>
-                <li>C++</li>
-                <li>HTML5</li>
-                <li>JavaScript</li>
-                <li>Automação com Arduino e Raspberry Pi</li>
-            </ul>
-        </section>
+        <section id="curriculo">
+            <h2>Meu Currículo</h2>
 
-        <section id="contato">
-            <h2>Contato</h2>
-            <p>Email: <a href="mailto:dimorgs@gmail.com">dimorgs@gmail.com</a></p>
-            <p>
-                LinkedIn:
-                <a href="https://linkedin.com/in/diego-morgado-145ab912b" target="_blank" rel="noopener noreferrer">
-                    linkedin.com/in/diego-morgado-145ab912b
-                </a>
-            </p>
+            <div class="curriculo-container">
+
+                <div class="curriculo-section">
+                    <h3>Informações básicas</h3>
+                    <p><strong>Localização:</strong> Brasileiro, localizado no Centro de São Paulo - SP</p>
+                    <p><strong>Nascimento:</strong> 05/10/1991</p>
+                    <p><strong>Estado civil:</strong> Solteiro</p>
+                    <p><strong>Telefone:</strong> (12) 99756-3257</p>
+                    <p><strong>E-mail:</strong> dimorgs@gmail.com</p>
+                </div>
+
+                <div class="curriculo-section">
+                    <h3>Resumo Profissional</h3>
+                    <p>
+                        Desenvolvedor Python com experiência em automação de processos, aplicações desktop,
+                        análise de dados, integração com APIs e soluções com Inteligência Artificial.
+                        Atua na criação de ferramentas internas, dashboards operacionais, sistemas de apoio
+                        à tomada de decisão e automações voltadas à eficiência de processos.
+                    </p>
+                </div>
+
+                <div class="curriculo-section">
+                    <h3>Objetivo</h3>
+                    <p>
+                        Atuar no desenvolvimento de soluções com Python, automação de processos e Inteligência
+                        Artificial aplicada, contribuindo para a construção de sistemas, integração de dados
+                        e criação de produtos tecnológicos eficientes.
+                    </p>
+                </div>
+
+                <div class="curriculo-section">
+                    <h3>Pontos Fortes</h3>
+                    <ul>
+                        <li>Python aplicado a problemas reais</li>
+                        <li>Automação de processos industriais e operacionais</li>
+                        <li>Desenvolvimento desktop com interfaces gráficas</li>
+                        <li>Banco de dados, APIs e organização de informações</li>
+                        <li>Projetos com IA, visão computacional e sistemas embarcados</li>
+                        <li>Perfil autodidata, analítico e orientado à solução de problemas</li>
+                    </ul>
+                </div>
+
+                <div class="curriculo-section">
+                    <h3>Formação Acadêmica</h3>
+                    <ul>
+                        <li>Engenharia de Automação e Controle — Faculdade Anhanguera de Taubaté — 2013</li>
+                        <li>Pós-graduação em Machine Learning e Inteligência Artificial — Anhanguera — conclusão prevista em maio de 2026</li>
+                    </ul>
+                </div>
+
+                <div class="curriculo-section">
+                    <h3>Cursos e Certificados</h3>
+                    <ul>
+                        <li>Foundation Certificate e Agentes de IA — Skyone — 2026</li>
+                        <li>Desenvolvedor Python — Básico, Intermediário e Avançado — FATEC Jundiaí e Huawei — 96h — 2025</li>
+                    </ul>
+                </div>
+
+                <div class="curriculo-section">
+                    <h3>Experiência Profissional</h3>
+
+                    <div class="experiencia-item">
+                        <h4>Pan-Metal</h4>
+                        <p><strong>Cargo:</strong> Analista de Automação de Processos</p>
+                        <p><strong>Período:</strong> 03/2026 – Atualmente</p>
+                        <ul>
+                            <li>Desenvolvimento de soluções internas utilizando Python e Inteligencia Artificial.</li>
+                            <li>Automação de processos industriais e operacionais.</li>
+                            <li>Criação de dashboards, ferramentas de apoio à decisão e sistemas internos.</li>
+                            <li>Uso de Python, FastAPI, SQLite, Pandas, APIs e Playwright.</li>
+                        </ul>
+                    </div>
+
+                    <div class="experiencia-item">
+                        <h4>Colégio Tableau – Taubaté/SP</h4>
+                        <p><strong>Cargo:</strong> Professor nos cursos de Mecânica e Mecatrônica</p>
+                        <p><strong>Período:</strong> 03/2022 – Atualmente</p>
+                        <ul>
+                            <li>Atuação em disciplinas técnicas envolvendo automação, programação, IA, eletrônica, CAD, robótica e sistemas industriais.</li>
+                            <li>Orientação de projetos envolvendo Python, IA e tecnologias aplicadas.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <button class="botao-curriculo" onclick="gerarCurriculoPDF()">
+                    Baixar meu currículo
+                </button>
+
+            </div>
         </section>
     </main>
 
     <footer>
         <p>© 2026 - Diego Morgado</p>
     </footer>
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
     <script src="js/script.js"></script>
 </body>
 </html>

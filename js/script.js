@@ -1,31 +1,60 @@
 const projetos = [
     {
-        nome: "AI Pet - Inteligência Artificial para Pets",
-        descricao: "Detecção de pessoas e animais com IA e comunicação com Arduino e Raspberry PI",
-        detalhes: "Sistema embarcado com visão computacional.",
+        nome: "My Notebook",
+        descricao: "Aplicação desktop modular em Python para organização pessoal, finanças, tarefas e planejamento.",
+        detalhes: `
+        Sistema desktop desenvolvido com Python, PySide6 e SQLite, usando arquitetura modular por domínio.
+        O projeto segue separação em camadas UI → Service → Repository → Database, com módulos independentes
+        para dashboard, finanças, tarefas, planner e calendário. O objetivo é transformar rotinas pessoais em
+        uma aplicação extensível, com dashboards editáveis, cards dinâmicos e configurações visuais.
+    `,
+        link: "https://github.com/Peterquio/my_notebook",
+        tecnologias: ["Python", "PySide6", "SQLite", "Arquitetura Modular", "Repository Pattern"],
         midias: [
-            { tipo: "imagem", src: "img/esp32_1.png" },
-            { tipo: "imagem", src: "img/esp32_2.png" },
+            { tipo: "imagem", src: "img/my_notebook_1.png" },
+            { tipo: "imagem", src: "img/my_notebook_2.png" },
+            { tipo: "imagem", src: "img/my_notebook_3.png" },
             {
                 tipo: "video",
-                src: "https://www.youtube.com/embed/SEU_VIDEO_ID_AQUI"
+                src: "https://youtube-nocookie.com/embed/oqB45QmgYLM"
+            }
+        ]
+    },
+    {
+        nome: "AI Pet - Inteligência Artificial para Pets",
+        descricao: "Sistema com visão computacional para detecção de pets usando IA e ESP32-CAM.",
+        detalhes: `
+        Projeto em desenvolvimento voltado para monitoramento inteligente de pets, utilizando Python,
+        visão computacional e integração com hardware embarcado. A proposta é detectar animais em tempo real,
+        processar imagens da ESP32-CAM e permitir ações automatizadas a partir dos eventos identificados.
+    `,
+        link: "https://github.com/Peterquio/ai_pet",
+        tecnologias: ["Python", "IA", "Visão Computacional", "ESP32-CAM", "Arduino"],
+        midias: [
+            {
+                tipo: "video",
+                src: "https://www.youtube-nocookie.com/embed/ojbSPCltV9U"
             },
-            { tipo: "imagem", src: "img/esp32_3.png" }
+            { tipo: "imagem", src: "img/aipet_1.png" },
+            { tipo: "imagem", src: "img/aipet_2.png" },
+            { tipo: "imagem", src: "img/aipet_3.png" }
         ]
     },
     {
         nome: "Pokedex 2.0",
-        descricao: "Aplicação em Python com SQLite e interface gráfica",
-        detalhes: "Sistema desktop com banco de dados.",
+        descricao: "Aplicação desktop em Python com interface gráfica e banco de dados SQLite.",
+        detalhes: `
+        Sistema desktop desenvolvido em Python com interface gráfica e banco de dados SQLite.
+        O projeto permite cadastrar, consultar e organizar informações de Pokémon, trabalhando conceitos
+        de CRUD, persistência de dados, organização de código e construção de uma aplicação desktop funcional.
+    `,
         link: "https://github.com/Peterquio/pokedex_2.0",
+        tecnologias: ["Python", "SQLite", "Interface Gráfica", "CRUD", "Desktop App"],
         midias: [
             { tipo: "imagem", src: "img/pokedex_1.png" },
             { tipo: "imagem", src: "img/pokedex_2.png" },
             { tipo: "imagem", src: "img/pokedex_3.png" },
-            {
-                tipo: "video",
-                src: "https://www.youtube.com/embed/SEU_OUTRO_VIDEO_ID_AQUI"
-            },
+            { tipo: "imagem", src: "img/pokedex_4.png" },
             { tipo: "imagem", src: "img/pokedex_5.png" }
         ]
     }
@@ -74,7 +103,13 @@ projetos.forEach(projeto => {
     <p>${projeto.descricao}</p>
 
     <div class="projeto-detalhes">
-      <p>${projeto.detalhes}</p>
+    <p>${projeto.detalhes}</p>
+
+      ${projeto.tecnologias ? `
+        <div class="tecnologias">
+          ${projeto.tecnologias.map(tech => `<span>${tech}</span>`).join("")}
+        </div>
+      ` : ""}
 
       ${projeto.link ? `
         <p>
@@ -169,7 +204,7 @@ projetos.forEach(projeto => {
         src="${src}"
         title="Vídeo do projeto"
         frameborder="0"
-        allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
         allowfullscreen>
       </iframe>
     `;
@@ -294,3 +329,157 @@ projetos.forEach(projeto => {
     atualizar();
     listaProjetos.appendChild(div);
 });
+
+document.querySelectorAll(".skill-stars").forEach(starsDiv => {
+    const rating = parseFloat(starsDiv.dataset.rating);
+
+    let starsHTML = "";
+
+    for (let i = 1; i <= 5; i++) {
+
+        if (rating >= i) {
+            starsHTML += `<i class="fas fa-star"></i>`;
+        }
+
+        else if (rating >= i - 0.5) {
+            starsHTML += `<i class="fas fa-star-half-alt"></i>`;
+        }
+
+        else {
+            starsHTML += `<i class="far fa-star"></i>`;
+        }
+    }
+
+    starsDiv.innerHTML = starsHTML;
+});
+
+function gerarCurriculoPDF() {
+    const { jsPDF } = window.jspdf;
+
+    const doc = new jsPDF();
+    const margem = 18;
+    const larguraTexto = 174;
+    let y = 18;
+
+    function titulo(texto) {
+        doc.setFont("helvetica", "bold");
+        doc.setFontSize(16);
+        doc.text(texto, margem, y);
+        y += 10;
+    }
+
+    function subtitulo(texto) {
+        if (y > 270) {
+            doc.addPage();
+            y = 18;
+        }
+
+        doc.setFont("helvetica", "bold");
+        doc.setFontSize(14);
+
+        doc.text(texto, margem, y);
+
+        y += 8;
+    }
+
+    function paragrafo(texto, options = {}) {
+
+        const {
+            bold = false,
+            indent = 0,
+            spacing = 5
+        } = options;
+
+        doc.setFont(
+            "helvetica",
+            bold ? "bold" : "normal"
+        );
+
+        doc.setFontSize(
+            bold ? 12 : 10
+        );
+
+        const largura = larguraTexto - indent;
+
+        const linhas = doc.splitTextToSize(
+            texto,
+            largura
+        );
+
+        if (y + linhas.length * spacing > 280) {
+            doc.addPage();
+            y = 18;
+        }
+
+        doc.text(
+            linhas,
+            margem + indent,
+            y
+        );
+
+        y += linhas.length * spacing + 3;
+    }
+
+    function lista(itens) {
+
+        itens.forEach(item => {
+
+            paragrafo(
+                "• " + item,
+                {
+                    indent: 6,
+                    spacing: 4
+                }
+            );
+        });
+    }
+
+    titulo("Diego Francisco Alves Morgado");
+    paragrafo("Brasileiro | Centro de São Paulo - SP | 05/10/1991 | Solteiro");
+    paragrafo("Telefone: (12) 99756-3257 | E-mail: dimorgs@gmail.com");
+
+    subtitulo("Resumo Profissional");
+    paragrafo("Desenvolvedor Python com experiência em automação de processos, aplicações desktop, análise de dados, integração com APIs e soluções com Inteligência Artificial. Atua na criação de ferramentas internas, dashboards operacionais, sistemas de apoio à tomada de decisão e automações voltadas à eficiência de processos.");
+
+    subtitulo("Objetivo");
+    paragrafo("Atuar no desenvolvimento de soluções com Python, automação de processos e Inteligência Artificial aplicada, contribuindo para a construção de sistemas, integração de dados e criação de produtos tecnológicos eficientes.");
+
+    subtitulo("Pontos Fortes");
+    lista([
+        "Python aplicado a problemas reais",
+        "Automação de processos industriais e operacionais",
+        "Desenvolvimento desktop com interfaces gráficas",
+        "Banco de dados, APIs e organização de informações",
+        "Projetos com IA, visão computacional e sistemas embarcados",
+        "Perfil autodidata, analítico e orientado à solução de problemas"
+    ]);
+
+    subtitulo("Formação Acadêmica");
+    lista([
+        "Engenharia de Automação e Controle — Faculdade Anhanguera de Taubaté — 2013",
+        "Pós-graduação em Machine Learning e Inteligência Artificial — Anhanguera — conclusão prevista em maio de 2026"
+    ]);
+
+    subtitulo("Cursos e Certificados");
+    lista([
+        "Foundation Certificate e Agentes de IA — Skyone — 2026",
+        "Desenvolvedor Python — Básico, Intermediário e Avançado — FATEC Jundiaí e Huawei — 96h — 2025"
+    ]);
+
+    subtitulo("Experiência Profissional");
+    paragrafo("Pan-Metal — Analista de Automação de Processos — 03/2026 até atualmente");
+    lista([
+        "Desenvolvimento de soluções internas utilizando Python",
+        "Automação de processos industriais e operacionais",
+        "Criação de dashboards, ferramentas de apoio à decisão e sistemas internos",
+        "Uso de Python, FastAPI, SQLite, Pandas, APIs e Playwright"
+    ]);
+
+    paragrafo("Colégio Tableau – Taubaté/SP — Professor nos cursos de Mecânica e Mecatrônica — 03/2022 até atualmente");
+    lista([
+        "Atuação em disciplinas técnicas envolvendo automação, programação, IA, eletrônica, CAD, robótica e sistemas industriais",
+        "Orientação de projetos envolvendo Python, IA e tecnologias aplicadas"
+    ]);
+
+    doc.save("Curriculo_Diego_Morgado.pdf");
+}
