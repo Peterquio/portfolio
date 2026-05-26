@@ -234,6 +234,29 @@ nav a {
         font-weight: 600;
     }
 
+.titulo-projeto {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.seta-projeto {
+    font-size: 0.9rem;
+    transition: transform 0.25s ease;
+}
+
+.projeto.aberto .seta-projeto {
+    transform: rotate(180deg);
+}
+
+.clique-ver {
+    font-size: 0.8rem;
+    color: #888;
+    font-style: italic;
+    margin-top: -2px;
+    margin-bottom: 6px;
+}
+
 /* ===================== */
 /* PREVIEW PRINCIPAL */
 /* ===================== */

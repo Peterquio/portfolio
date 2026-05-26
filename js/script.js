@@ -99,7 +99,11 @@ projetos.forEach(projeto => {
     div.classList.add("projeto");
 
     div.innerHTML = `
-    <h3>${projeto.nome}</h3>
+    <h3 class="titulo-projeto">
+        ${projeto.nome}
+        <span class="seta-projeto">▼</span>
+    </h3>
+    <p class="clique-ver">(clique para ver)</p>
     <p>${projeto.descricao}</p>
 
     <div class="projeto-detalhes">
