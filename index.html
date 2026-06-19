@@ -162,93 +162,11 @@
             <h2>Meu Currículo</h2>
 
             <div class="curriculo-container">
-
-                <div class="curriculo-section">
-                    <h3>Informações básicas</h3>
-                    <p><strong>Localização:</strong> Brasileiro, localizado no Centro de São Paulo - SP</p>
-                    <p><strong>Nascimento:</strong> 05/10/1991</p>
-                    <p><strong>Estado civil:</strong> Solteiro</p>
-                    <p><strong>Telefone:</strong> (12) 99756-3257</p>
-                    <p><strong>E-mail:</strong> dimorgs@gmail.com</p>
-                </div>
-
-                <div class="curriculo-section">
-                    <h3>Resumo Profissional</h3>
-                    <p>
-                        Desenvolvedor Python com experiência em automação de processos, aplicações desktop,
-                        análise de dados, integração com APIs e soluções com Inteligência Artificial.
-                        Atua na criação de ferramentas internas, dashboards operacionais, sistemas de apoio
-                        à tomada de decisão e automações voltadas à eficiência de processos.
-                    </p>
-                </div>
-
-                <div class="curriculo-section">
-                    <h3>Objetivo</h3>
-                    <p>
-                        Atuar no desenvolvimento de soluções com Python, automação de processos e Inteligência
-                        Artificial aplicada, contribuindo para a construção de sistemas, integração de dados
-                        e criação de produtos tecnológicos eficientes.
-                    </p>
-                </div>
-
-                <div class="curriculo-section">
-                    <h3>Pontos Fortes</h3>
-                    <ul>
-                        <li>Python aplicado a problemas reais</li>
-                        <li>Automação de processos industriais e operacionais</li>
-                        <li>Desenvolvimento desktop com interfaces gráficas</li>
-                        <li>Banco de dados, APIs e organização de informações</li>
-                        <li>Projetos com IA, visão computacional e sistemas embarcados</li>
-                        <li>Perfil autodidata, analítico e orientado à solução de problemas</li>
-                    </ul>
-                </div>
-
-                <div class="curriculo-section">
-                    <h3>Formação Acadêmica</h3>
-                    <ul>
-                        <li>Engenharia de Automação e Controle — Faculdade Anhanguera de Taubaté — 2013</li>
-                        <li>Pós-graduação em Machine Learning e Inteligência Artificial — Anhanguera — conclusão prevista em maio de 2026</li>
-                    </ul>
-                </div>
-
-                <div class="curriculo-section">
-                    <h3>Cursos e Certificados</h3>
-                    <ul>
-                        <li>Foundation Certificate e Agentes de IA — Skyone — 2026</li>
-                        <li>Desenvolvedor Python — Básico, Intermediário e Avançado — FATEC Jundiaí e Huawei — 96h — 2025</li>
-                    </ul>
-                </div>
-
-                <div class="curriculo-section">
-                    <h3>Experiência Profissional</h3>
-
-                    <div class="experiencia-item">
-                        <h4>Pan-Metal</h4>
-                        <p><strong>Cargo:</strong> Analista de Automação de Processos</p>
-                        <p><strong>Período:</strong> 03/2026 – Atualmente</p>
-                        <ul>
-                            <li>Desenvolvimento de soluções internas utilizando Python e Inteligencia Artificial.</li>
-                            <li>Automação de processos industriais e operacionais.</li>
-                            <li>Criação de dashboards, ferramentas de apoio à decisão e sistemas internos.</li>
-                            <li>Uso de Python, FastAPI, SQLite, Pandas, APIs e Playwright.</li>
-                        </ul>
-                    </div>
-
-                    <div class="experiencia-item">
-                        <h4>Colégio Tableau – Taubaté/SP</h4>
-                        <p><strong>Cargo:</strong> Professor nos cursos de Mecânica e Mecatrônica</p>
-                        <p><strong>Período:</strong> 03/2022 – Atualmente</p>
-                        <ul>
-                            <li>Atuação em disciplinas técnicas envolvendo automação, programação, IA, eletrônica, CAD, robótica e sistemas industriais.</li>
-                            <li>Orientação de projetos envolvendo Python, IA e tecnologias aplicadas.</li>
-                        </ul>
-                    </div>
-                </div>
+                <div id="curriculo-conteudo" class="curriculo-conteudo"></div>
 
                 <button class="botao-curriculo" onclick="gerarCurriculoPDF()">
                     Baixar meu currículo
                 </button>
-
             </div>
         </section>
     </main>
@@ -257,6 +175,9 @@
         <p>© 2026 - Diego Morgado</p>
     </footer>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script src="js/curriculo-data.js"></script>
+    <script src="js/curriculo-ui.js"></script>
+    <script src="js/curriculo-pdf.js"></script>
     <script src="js/script.js"></script>
 </body>
 </html>

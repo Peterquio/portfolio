@@ -620,3 +620,61 @@ footer {
         align-self: flex-start;
     }
 }
+
+.curriculo-container {
+    max-width: 1040px;
+    margin: 0 auto;
+}
+
+.curriculo-conteudo {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.curriculo-section {
+    padding: 0;
+    overflow: hidden;
+}
+
+.curriculo-section-header {
+    width: 100%;
+    border: none;
+    background: transparent;
+    color: #222;
+    padding: 20px 26px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    font-weight: 700;
+    font-size: 1.08rem;
+}
+
+    .curriculo-section-header:hover {
+        background: rgba(0, 0, 0, 0.03);
+    }
+
+.seta-curriculo {
+    transition: transform 0.25s ease;
+}
+
+.curriculo-section.aberto .seta-curriculo {
+    transform: rotate(180deg);
+}
+
+.curriculo-section-body {
+    display: none;
+    padding: 0 30px 24px;
+}
+
+.curriculo-section.aberto .curriculo-section-body {
+    display: block;
+}
+
+.curriculo-section-body ul {
+    padding-left: 28px;
+}
+
+.curriculo-section-body li + li {
+    margin-top: 4px;
+}
