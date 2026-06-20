@@ -34,12 +34,8 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{1c64b9c2-e352-428e-a56d-0ace190b99a6}"
-            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
@@ -48,7 +44,7 @@
               "RelativeDocumentMoniker": "js\\curriculo-pdf.js",
               "ToolTip": "D:\\Dev\\portfolio\\js\\curriculo-pdf.js",
               "RelativeToolTip": "js\\curriculo-pdf.js",
-              "ViewState": "AgIAACkAAAAAAAAAAADwv0gAAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAADUAAAAAAAAAAADwv1oAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
               "WhenOpened": "2026-06-19T12:06:05.316Z",
               "EditorCaption": ""
@@ -63,8 +59,7 @@
               "RelativeToolTip": "js\\curriculo-ui.js",
               "ViewState": "AgIAACoAAAAAAAAAAAA1wBQAAAAEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2026-06-19T12:05:25.87Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-06-19T12:05:25.87Z"
             },
             {
               "$type": "Document",
@@ -76,8 +71,7 @@
               "RelativeToolTip": "js\\curriculo-data.js",
               "ViewState": "AgIAAC4AAAAAAAAAAADwv0AAAAASAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2026-06-19T12:05:00.242Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-06-19T12:05:00.242Z"
             },
             {
               "$type": "Document",
@@ -101,8 +95,7 @@
               "RelativeToolTip": "js\\script.js",
               "ViewState": "AgIAAEsBAAAAAAAAAAAAAGUBAAADAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2026-03-25T18:36:48.183Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-03-25T18:36:48.183Z"
             },
             {
               "$type": "Document",
@@ -115,6 +108,14 @@
               "ViewState": "AgIAAJQAAAAAAAAAAAAkwLQAAAAoAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
               "WhenOpened": "2026-03-25T16:59:12.403Z"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c64b9c2-e352-428e-a56d-0ace190b99a6}"
             }
           ]
         }
