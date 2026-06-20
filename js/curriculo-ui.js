@@ -4,11 +4,22 @@ function criarListaHTML(itens) {
 
 function criarConteudoSecao(secao) {
     if (secao.tipo === "texto") {
+
+        if (Array.isArray(secao.conteudo)) {
+            return secao.conteudo
+                .map(paragrafo => `<p>${paragrafo}</p>`)
+                .join("");
+        }
+
         return `<p>${secao.conteudo}</p>`;
     }
 
     if (secao.tipo === "lista") {
         return criarListaHTML(secao.itens);
+    }
+
+    if (secao.tipo === "experiencia") {
+        return criarExperienciaHTML(secao.itens);
     }
 
     return "";
@@ -27,6 +38,16 @@ function criarSecaoCurriculo(titulo, conteudo, aberta = false) {
             </div>
         </article>
     `;
+}
+
+function criarExperienciaHTML(itens) {
+    return itens.map(item => `
+        <div class="experiencia-item">
+            <h4>${item.titulo}</h4>
+            <p><strong>Cargo:</strong> ${item.cargo}</p>
+            ${item.descricao.map(paragrafo => `<p>${paragrafo}</p>`).join("")}
+        </div>
+    `).join("");
 }
 
 function renderizarCurriculo() {

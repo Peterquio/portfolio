@@ -1,18 +1,30 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\dev\\Outros\\portfolio\\",
+  "WorkspaceRootPath": "D:\\Dev\\portfolio\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\dev\\Outros\\portfolio\\js\\script.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Dev\\portfolio\\js\\curriculo-pdf.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:js\\curriculo-pdf.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Dev\\portfolio\\js\\curriculo-ui.js||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:js\\curriculo-ui.js||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Dev\\portfolio\\js\\curriculo-data.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:js\\curriculo-data.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Dev\\portfolio\\js\\script.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:js\\script.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\dev\\Outros\\portfolio\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Dev\\portfolio\\css\\style.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:css\\style.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\dev\\Outros\\portfolio\\css\\style.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:css\\style.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Dev\\portfolio\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,7 +34,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Bookmark",
@@ -30,41 +42,79 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "curriculo-pdf.js",
+              "DocumentMoniker": "D:\\Dev\\portfolio\\js\\curriculo-pdf.js",
+              "RelativeDocumentMoniker": "js\\curriculo-pdf.js",
+              "ToolTip": "D:\\Dev\\portfolio\\js\\curriculo-pdf.js",
+              "RelativeToolTip": "js\\curriculo-pdf.js",
+              "ViewState": "AgIAACkAAAAAAAAAAADwv0gAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2026-06-19T12:06:05.316Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "curriculo-ui.js",
+              "DocumentMoniker": "D:\\Dev\\portfolio\\js\\curriculo-ui.js",
+              "RelativeDocumentMoniker": "js\\curriculo-ui.js",
+              "ToolTip": "D:\\Dev\\portfolio\\js\\curriculo-ui.js",
+              "RelativeToolTip": "js\\curriculo-ui.js",
+              "ViewState": "AgIAACoAAAAAAAAAAAA1wBQAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2026-06-19T12:05:25.87Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 2,
+              "Title": "curriculo-data.js",
+              "DocumentMoniker": "D:\\Dev\\portfolio\\js\\curriculo-data.js",
+              "RelativeDocumentMoniker": "js\\curriculo-data.js",
+              "ToolTip": "D:\\Dev\\portfolio\\js\\curriculo-data.js",
+              "RelativeToolTip": "js\\curriculo-data.js",
+              "ViewState": "AgIAAC4AAAAAAAAAAADwv0AAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2026-06-19T12:05:00.242Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "style.css",
-              "DocumentMoniker": "C:\\dev\\Outros\\portfolio\\css\\style.css",
+              "DocumentMoniker": "D:\\Dev\\portfolio\\css\\style.css",
               "RelativeDocumentMoniker": "css\\style.css",
-              "ToolTip": "C:\\dev\\Outros\\portfolio\\css\\style.css",
+              "ToolTip": "D:\\Dev\\portfolio\\css\\style.css",
               "RelativeToolTip": "css\\style.css",
-              "ViewState": "AgIAAM0AAAAAAAAAAAAqwAEBAAABAAAAAAAAAA==",
+              "ViewState": "AgIAAIECAAAAAAAAAAAkwKcCAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
               "WhenOpened": "2026-04-13T17:49:37.389Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
               "Title": "script.js",
-              "DocumentMoniker": "C:\\dev\\Outros\\portfolio\\js\\script.js",
+              "DocumentMoniker": "D:\\Dev\\portfolio\\js\\script.js",
               "RelativeDocumentMoniker": "js\\script.js",
-              "ToolTip": "C:\\dev\\Outros\\portfolio\\js\\script.js",
+              "ToolTip": "D:\\Dev\\portfolio\\js\\script.js",
               "RelativeToolTip": "js\\script.js",
-              "ViewState": "AgIAAMUBAAAAAAAAAAAAAOcBAAAlAAAAAAAAAA==",
+              "ViewState": "AgIAAEsBAAAAAAAAAAAAAGUBAAADAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
               "WhenOpened": "2026-03-25T18:36:48.183Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 5,
               "Title": "index.html",
-              "DocumentMoniker": "C:\\dev\\Outros\\portfolio\\index.html",
+              "DocumentMoniker": "D:\\Dev\\portfolio\\index.html",
               "RelativeDocumentMoniker": "index.html",
-              "ToolTip": "C:\\dev\\Outros\\portfolio\\index.html",
+              "ToolTip": "D:\\Dev\\portfolio\\index.html",
               "RelativeToolTip": "index.html",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIBAABfAAAAAAAAAA==",
+              "ViewState": "AgIAAJQAAAAAAAAAAAAkwLQAAAAoAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
-              "WhenOpened": "2026-03-25T16:59:12.403Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-03-25T16:59:12.403Z"
             }
           ]
         }
