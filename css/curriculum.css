@@ -1,0 +1,81 @@
+.curriculum-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.curriculum-card {
+    background: var(--bg-card-soft);
+    border: 2px solid var(--purple);
+    box-shadow: 5px 5px 0 var(--shadow-purple);
+    overflow: hidden;
+}
+
+.curriculum-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 22px;
+
+    cursor: pointer;
+    transition: .25s;
+}
+
+.curriculum-header:hover {
+    background: rgba(255,255,255,.03);
+}
+
+.curriculum-header h3 {
+    color: white;
+    font-size: 1.05rem;
+}
+
+.curriculum-arrow {
+    color: var(--magenta-soft);
+    transition: .25s;
+}
+
+.curriculum-card.open .curriculum-arrow {
+    transform: rotate(180deg);
+}
+
+.curriculum-body {
+    max-height: 0;
+    overflow: hidden;
+    transition: .30s ease;
+}
+
+.curriculum-card.open .curriculum-body {
+    max-height: 900px;
+}
+
+.curriculum-content {
+    padding: 0 24px 24px;
+}
+
+.curriculum-content p {
+    color: var(--text-soft);
+    line-height: 1.7;
+}
+
+.curriculum-content ul {
+    margin-top: 14px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.curriculum-content li {
+    list-style: none;
+    color: var(--text-soft);
+}
+
+.curriculum-content li::before {
+    content: "► ";
+    color: var(--blue);
+}
+
+.download-cv {
+    margin-top: 26px;
+}

@@ -1,183 +1,174 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfólio de Diego</title>
-    <link rel="stylesheet" href="css/style.css">
+    <title>Diego Morgado | Python, IA e Automação</title>
+
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/hero.css">
+    <link rel="stylesheet" href="css/dashboard.css">
+    <link rel="stylesheet" href="css/skills.css">
+    <link rel="stylesheet" href="css/projects.css">
+    <link rel="stylesheet" href="css/curriculum.css">
+
     <link rel="stylesheet"
-          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 </head>
+
 <body>
 
-    <header>
-        <div class="h-nr-container">
-            <div class="logo-container">
+    <div class="background-grid"></div>
+
+    <header class="site-header">
+        <div class="container header-content">
+            <a href="#home" class="brand">
                 <img src="img/logo.png" alt="Logo do portfólio">
-            </div>
+                <span>Diego Morgado</span>
+            </a>
 
-            <div class="large-container">
-                <h1 class="main-title">Diego Morgado</h1>
-
-                <nav>
-                    <ul>
-                        <li><a href="#sobre">Sobre mim</a></li>
-                        <li><a href="#habilidades">Habilidades</a></li>
-                        <li><a href="#projetos">Projetos</a></li>
-                        <li><a href="#curriculo">Meu Currículo</a></li>
-                    </ul>
-                </nav>
-            </div>
+            <nav class="main-nav">
+                <a href="#home">Home</a>
+                <a href="#skills">Stacks</a>
+                <a href="#projects">Projetos</a>
+                <a href="#curriculum">Currículo</a>
+                <a href="#contact">Contato</a>
+            </nav>
         </div>
     </header>
 
     <main>
-        <section id="sobre">
-            <div class="profile-container">
-                <div class="small-container">
-                    <img src="img/profile.png" alt="Foto de Diego">
 
-                    <div class="social-links">
-                        <a href="SEU_LINK_DO_LINKEDIN_AQUI" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
-                            <i class="fab fa-linkedin-in"></i>
-                        </a>
+        <section id="home" class="hero-section">
+            <div class="container hero-grid">
 
-                        <a href="https://github.com/Peterquio" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                <div class="hero-content">
+                    <span class="eyebrow">PLAYER: PYTHON ENGINEER / IA BUILDER</span>
+
+                    <h1>
+                        Diego Morgado
+                        <span>Python, IA e Automação</span>
+                    </h1>
+
+                    <p>
+                        Desenvolvedor Python com DNA de engenharia, criando sistemas desktop,
+                        robôs corporativos, automações de processos e soluções com Inteligência Artificial aplicada.
+                    </p>
+
+                    <div class="hero-actions">
+                        <a href="#projects" class="pixel-button primary">START PROJECTS</a>
+                        <button class="pixel-button secondary" id="download-cv-button">
+                            DOWNLOAD CV
+                        </button>
+                    </div>
+                </div>
+
+                <aside class="hero-avatar-card">
+                    <div class="avatar-frame">
+                        <img src="img/profile.png" alt="Foto de Diego Morgado">
+                    </div>
+
+                    <div class="hero-socials">
+                        <a href="https://github.com/Peterquio" target="_blank" rel="noopener noreferrer">
                             <i class="fab fa-github"></i>
                         </a>
 
-                        <a href="mailto:dimorgs@gmail.com" aria-label="E-mail">
+                        <a href="SEU_LINK_DO_LINKEDIN_AQUI" target="_blank" rel="noopener noreferrer">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+
+                        <a href="mailto:dimorgs@gmail.com">
                             <i class="fas fa-envelope"></i>
                         </a>
                     </div>
-                </div>
-            </div>
+                </aside>
 
-            <div class="bio-wrapper">
-                <div class="bio-card">
-                    <p>
-                        Sou desenvolvedor Python com foco em automação, inteligência artificial,
-                        aplicações desktop e arquitetura de software. Tenho experiência na criação
-                        de sistemas voltados para organização de processos, análise de dados,
-                        visão computacional e integração entre software e hardware.
-                    </p>
-
-                    <p>
-                        Meus projetos unem engenharia, design de software e IA para resolver
-                        problemas reais de forma prática e escalável. Trabalho principalmente
-                        com Python, PySide6, SQLite, APIs, automações industriais e modelos
-                        de inteligência artificial aplicados a visão computacional e produtividade.
-                    </p>
-
-                    <p>
-                        Atualmente desenvolvo soluções próprias como sistemas modulares desktop,
-                        ferramentas de automação de fluxo produtivo e projetos envolvendo IA,
-                        ESP32-CAM e análise inteligente de dados. Tenho grande interesse em
-                        arquitetura limpa, experiência do usuário e construção de produtos
-                        tecnológicos modernos.
-                    </p>
-                </div>
             </div>
         </section>
 
-        <section id="habilidades">
-            <section id="habilidades">
-                <h2>Habilidades por Afinidade</h2>
+        <section class="dashboard-section">
+            <div class="container dashboard-grid" id="dashboard-grid"></div>
+        </section>
 
-                <div class="skills-list">
-
-                    <div class="skill-item">
-                        <div class="skill-info">
-                            <i class="fab fa-python"></i>
-                            <span>Python</span>
-                        </div>
-
-                        <div class="skill-stars" data-rating="5"></div>
-                    </div>
-
-                    <div class="skill-item">
-                        <div class="skill-info">
-                            <i class="fas fa-brain"></i>
-                            <span>Inteligência Artificial</span>
-                        </div>
-
-                        <div class="skill-stars" data-rating="4.5"></div>
-                    </div>
-
-                    <div class="skill-item">
-                        <div class="skill-info">
-                            <i class="fas fa-desktop"></i>
-                            <span>PySide6 / Desktop Apps</span>
-                        </div>
-
-                        <div class="skill-stars" data-rating="5"></div>
-                    </div>
-
-                    <div class="skill-item">
-                        <div class="skill-info">
-                            <i class="fas fa-database"></i>
-                            <span>SQLite / Banco de Dados</span>
-                        </div>
-
-                        <div class="skill-stars" data-rating="4.5"></div>
-                    </div>
-
-                    <div class="skill-item">
-                        <div class="skill-info">
-                            <i class="fas fa-microchip"></i>
-                            <span>Sistemas Embarcados</span>
-                        </div>
-
-                        <div class="skill-stars" data-rating="4"></div>
-                    </div>
-
-                    <div class="skill-item">
-                        <div class="skill-info">
-                            <i class="fas fa-gears"></i>
-                            <span>Automação Industrial</span>
-                        </div>
-
-                        <div class="skill-stars" data-rating="5"></div>
-                    </div>
-
-                    <div class="skill-item">
-                        <div class="skill-info">
-                            <i class="fab fa-react"></i>
-                            <span>React / Front-End</span>
-                        </div>
-
-                        <div class="skill-stars" data-rating="3.5"></div>
-                    </div>
-
+        <section id="skills" class="section-block">
+            <div class="container">
+                <div class="section-heading">
+                    <span>SKILLS UNLOCKED</span>
+                    <h2>Especialidades desbloqueadas</h2>
                 </div>
-            </section>
-        </section>
 
-        <section id="projetos">
-            <h2>Projetos</h2>
-            <div id="lista-projetos"></div>
-        </section>
-
-        <section id="curriculo">
-            <h2>Meu Currículo</h2>
-
-            <div class="curriculo-container">
-                <div id="curriculo-conteudo" class="curriculo-conteudo"></div>
-
-                <button class="botao-curriculo" onclick="gerarCurriculoPDF()">
-                    Baixar meu currículo
-                </button>
+                <div class="skills-grid" id="skills-grid"></div>
             </div>
         </section>
+
+        <section id="projects" class="section-block">
+            <div class="container">
+                <div class="section-heading">
+                    <span>MAIN QUESTS</span>
+                    <h2>Projetos em destaque</h2>
+                </div>
+
+                <div class="projects-grid" id="projects-grid"></div>
+            </div>
+        </section>
+
+        <section id="curriculum" class="section-block">
+            <div class="container">
+                <div class="section-heading">
+                    <span>CHARACTER SHEET</span>
+                    <h2>Currículo</h2>
+                </div>
+
+                <div class="curriculum-wrapper" id="curriculum-wrapper"></div>
+            </div>
+        </section>
+
+        <section id="contact" class="section-block contact-section">
+            <div class="container contact-card">
+                <span class="eyebrow">READY?</span>
+
+                <h2>Vamos construir algo inteligente?</h2>
+
+                <p>
+                    Estou aberto a oportunidades com Python, automação de processos,
+                    desenvolvimento desktop, IA aplicada e integração de sistemas.
+                </p>
+
+                <div class="hero-actions">
+                    <a href="mailto:dimorgs@gmail.com" class="pixel-button primary">
+                        ENVIAR E-MAIL
+                    </a>
+
+                    <a href="https://github.com/Peterquio" target="_blank" rel="noopener noreferrer" class="pixel-button secondary">
+                        GITHUB
+                    </a>
+                </div>
+            </div>
+        </section>
+
     </main>
 
-    <footer>
-        <p>© 2026 - Diego Morgado</p>
+    <footer class="site-footer">
+        <div class="container">
+            <p>© 2026 - Diego Morgado</p>
+        </div>
     </footer>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
-    <script src="js/curriculo-data.js"></script>
-    <script src="js/curriculo-ui.js"></script>
-    <script src="js/curriculo-pdf.js"></script>
-    <script src="js/script.js"></script>
+
+    <script src="data/dashboard-data.js"></script>
+    <script src="data/skills-data.js"></script>
+    <script src="data/projects-data.js"></script>
+    <script src="data/curriculum-data.js"></script>
+
+    <script src="js/dashboard.js"></script>
+    <script src="js/skills.js"></script>
+    <script src="js/projects.js"></script>
+    <script src="js/curriculum.js"></script>
+    <script src="js/app.js"></script>
+
 </body>
+
 </html>

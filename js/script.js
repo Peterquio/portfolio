@@ -356,3 +356,9 @@ document.querySelectorAll(".skill-stars").forEach(starsDiv => {
 
     starsDiv.innerHTML = starsHTML;
 });
+
+document.querySelectorAll(".tech-skill-card").forEach(card => {
+    card.addEventListener("click", () => {
+        card.classList.toggle("open");
+    });
+});
